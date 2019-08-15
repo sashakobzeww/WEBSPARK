@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Header.css'
 import logo from "./img/logo.jpg"
+import Date from './Date/Date'
 
 class Header extends Component {
     render() {
@@ -19,7 +20,7 @@ class Header extends Component {
                         <li className="followers"><span>11,787</span> followers</li>
                         <li className="following"><span>112</span> following</li>
                     </ul>
-                    <div className="date"></div>
+                    <Date/>
                 </div>
             </>
         );
