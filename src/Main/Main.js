@@ -23,7 +23,7 @@ class Main extends Component {
         const blocks = this.state.blocks;
 
         const items = blocks.map((block) =>
-            <li>
+            <li className="block">
 
                 <div className="from">
                     <p className="fromDay">{block.fromDay}</p>
@@ -37,7 +37,7 @@ class Main extends Component {
                     <p className="toComments"><img src="Block/img/comment.png" alt="comments"/>{block.toComments}</p>
                 </div>
 
-                <div className="imageUpload">{block.imageUpload}</div>
+                <div className="imageUpload">Image upload: {block.imageUpload}</div>
 
             </li>
         )

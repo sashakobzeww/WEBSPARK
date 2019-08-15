@@ -1,0 +1,38 @@
+.block {
+    width: 300px;
+    height: 300px;
+    background-image: url(Block/img/block_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.block, .from, .to {
+    display: flex;
+}
+
+.from, .to {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fromDay, .toDay, .imageUpload {
+    font-size: 17px;
+}
+
+.imageUpload {
+    margin-bottom: 15px;
+}
+
+.to {
+    margin-bottom: 30px;
+}
+
+.from {
+    margin-bottom: 20px;
+}
