@@ -14,7 +14,11 @@ class Header extends Component {
                         <p>monblanproject</p>
                         <div className="start">Start on 17-02-2016</div>
                     </div>
-                    <div className="info"></div>
+                    <ul className="info">
+                        <li className="posts"><span>870</span> posts</li>
+                        <li className="followers"><span>11,787</span> followers</li>
+                        <li className="following"><span>112</span> following</li>
+                    </ul>
                     <div className="date"></div>
                 </div>
             </>
