@@ -36,3 +36,22 @@
 .from {
     margin-bottom: 20px;
 }
+
+.fromLikes p, .toLikes p {
+    width: 21px;
+    height: 19px;
+    background-image: url(Block/img/like.png);
+    margin-right: 7px;
+}
+
+.fromComments p, .toComments p {
+    width: 17px;
+    height: 17px;
+    background-image: url(Block/img/comment.png);
+    margin-right: 7px;
+}
+
+.fromLikes, .toLikes, .fromComments, .toComments {
+    display: flex;
+    font-weight: bold;
+}

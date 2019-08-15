@@ -27,14 +27,14 @@ class Main extends Component {
 
                 <div className="from">
                     <p className="fromDay">{block.fromDay}</p>
-                    <p className="fromLikes"><img src="Block/img/like.png" alt="likes"/>{block.fromLikes}</p>
-                    <p className="fromComments"><img src="Block/img/comment.png" alt="comments"/>{block.fromComments}</p>
+                    <p className="fromLikes"><p></p>{block.fromLikes}</p>
+                    <p className="fromComments"><p></p>{block.fromComments}</p>
                 </div>
 
                 <div className="to">
                     <p className="toDay">{block.toDay}</p>
-                    <p className="toLikes"><img src="Block/img/like.png" alt="likes"/>{block.toLikes}</p>
-                    <p className="toComments"><img src="Block/img/comment.png" alt="comments"/>{block.toComments}</p>
+                    <p className="toLikes"><p></p>{block.toLikes}</p>
+                    <p className="toComments"><p></p>{block.toComments}</p>
                 </div>
 
                 <div className="imageUpload">Image upload: {block.imageUpload}</div>
