@@ -126,9 +126,13 @@ class Main extends Component {
 
     render() {
         return (
-            <ul>
-                {this.makeList()}
-            </ul>
+            <div className="blockContainer">
+
+                <ul className="blocks">
+                    {this.makeList()}
+                </ul>
+
+            </div>
         );
     }
 }
