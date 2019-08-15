@@ -8,7 +8,7 @@ class Header extends Component {
         return (
             <>
                 <div className="left">
-                    <img src={logo} alt="logo"/>
+                    <a href="#"><img src={logo} alt="logo"/></a>
                 </div>
                 <div className="right">
                     <div className="top">
