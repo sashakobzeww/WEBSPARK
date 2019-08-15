@@ -6,7 +6,7 @@ import Date from './Date/Date'
 class Header extends Component {
     render() {
         return (
-            <>
+            <div className="header">
                 <div className="left">
                     <a href="#"><img src={logo} alt="logo"/></a>
                 </div>
@@ -22,7 +22,7 @@ class Header extends Component {
                     </ul>
                     <Date/>
                 </div>
-            </>
+            </div>
         );
     }
 }
