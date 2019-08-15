@@ -7,12 +7,14 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
+
                 <div className="left">
                     <a href="#"><img src={logo} alt="logo"/></a>
                 </div>
+
                 <div className="right">
                     <div className="top">
-                        <p>monblanproject</p>
+                        <p className="monblanproject">monblanproject</p>
                         <div className="start">Start on 17-02-2016</div>
                     </div>
                     <ul className="info">
@@ -22,6 +24,7 @@ class Header extends Component {
                     </ul>
                     <Date/>
                 </div>
+
             </div>
         );
     }
