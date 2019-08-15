@@ -1,7 +1,16 @@
+#block_1 {background-image: url(Block/img/block_1.jpg)}
+#block_2 {background-image: url(Block/img/block_2.jpg)}
+#block_3 {background-image: url(Block/img/block_3.jpg)}
+#block_4 {background-image: url(Block/img/block_4.jpg)}
+#block_5 {background-image: url(Block/img/block_5.jpg)}
+#block_6 {background-image: url(Block/img/block_6.jpg)}
+#block_7 {background-image: url(Block/img/block_7.jpg)}
+#block_8 {background-image: url(Block/img/block_8.jpg)}
+#block_9 {background-image: url(Block/img/block_9.jpg)}
+
 .block {
     width: 300px;
     height: 300px;
-    background-image: url(Block/img/block_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
