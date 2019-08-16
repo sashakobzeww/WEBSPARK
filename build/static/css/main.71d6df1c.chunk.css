@@ -1,0 +1,370 @@
+* {
+    font-family: Arial, serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+.header {
+    height: 200px
+}
+
+.header, .left {
+    display: flex;
+    justify-content: center
+}
+
+.left {
+    margin-right: 100px;
+    align-items: center
+}
+
+.right {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.right, .top {
+    display: flex
+}
+
+.top {
+    align-items: center
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    background-image: url("../media/logo.8f33a34c.jpg")
+}
+
+.start {
+    font-size: 15px;
+    color: #4090db;
+    border: 1px solid #4090db;
+    border-radius: 5px;
+    padding: 7px;
+    margin-left: 20px
+}
+
+.start:hover {
+    color: #fff;
+    background-color: #4090db;
+    cursor: pointer
+}
+
+.monblanproject {
+    font-size: 35px
+}
+
+.info {
+    display: flex
+}
+
+.info li {
+    font-size: 17px;
+    margin-right: 30px
+}
+
+.info li:last-child {
+    margin-right: 0
+}
+
+.info li span {
+    font-weight: 700
+}
+
+@media (max-width: 800px) {
+    .header {
+        height: 150px;
+        align-items: center
+    }
+
+    .left {
+        margin-right: 20px
+    }
+
+    .left, .logo {
+        width: 70px;
+        height: 70px
+    }
+
+    .left a, .left a img {
+        width: 100%;
+        height: 100%
+    }
+
+    .monblanproject {
+        font-size: 30px
+    }
+
+    .start {
+        font-size: 13px;
+        padding: 6px;
+        margin-left: 10px
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        height: 100px
+    }
+
+    .monblanproject {
+        font-size: 18px
+    }
+
+    .start {
+        font-size: 11px;
+        padding: 3px
+    }
+
+    .info li {
+        font-size: 14px;
+        margin-right: 10px
+    }
+
+    .dateFormContainer > div {
+        width: 80px !important
+    }
+
+    .DatePickerFrom, .DatePickerTo {
+        width: 79px !important
+    }
+}
+
+@media (max-width: 400px) {
+    .left {
+        margin-left: 0
+    }
+
+    .left, .logo {
+        width: 50px;
+        height: 50px
+    }
+
+    .info li {
+        font-size: 12px;
+        margin-right: 6px
+    }
+}
+
+.dateFormContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.dateFormContainer > div {
+    width: 120px;
+    border: 1px solid grey
+}
+
+.dateFormContainer > input {
+    max-width: 120px !important
+}
+
+.DatePickerFrom, .DatePickerTo {
+    outline: 0;
+    width: 119px
+}
+
+.react-datepicker-ignore-onclickoutside {
+    width: 120px
+}
+
+.react-datepicker-ignore-onclickoutside:focus {
+    outline: 0
+}
+
+.blockContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    padding-top: 70px;
+    box-shadow: inset 0 10px 20px 0 rgba(0, 0, 0, .12)
+}
+
+.blocks {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+#block_1 {
+    background-image: url("../media/block_1.831aee75.jpg")
+}
+
+#block_2 {
+    background-image: url("../media/block_2.772ed9cb.jpg")
+}
+
+#block_3 {
+    background-image: url("../media/block_3.dd7d93d4.jpg")
+}
+
+#block_4 {
+    background-image: url("../media/block_4.87000b73.jpg")
+}
+
+#block_5 {
+    background-image: url("../media/block_5.c568a00a.jpg")
+}
+
+#block_6 {
+    background-image: url("../media/block_6.8f9eb891.jpg")
+}
+
+#block_7 {
+    background-image: url("../media/block_7.e62aa001.jpg")
+}
+
+#block_8 {
+    background-image: url("../media/block_8.a3134cd7.jpg")
+}
+
+#block_9 {
+    background-image: url("../media/block_9.b6f9f4d8.jpg")
+}
+
+#block_3 .fromLikes p, #block_3 .toLikes p, #block_5 .fromLikes p, #block_5 .toLikes p {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAYAAACg/AXsAAAAjklEQVR42mP4////aSBeBcR8QMxADgYR7/9DwE0gDiLXkFv/UcEcIJYh1ZA7/zHBEyBOotQQGNgExIaUGgICn4C4DIg5KDEEBg4AsSWlhoDAHyCeAMS8lBgCA9eBOJBSQ2BgNhDrUGoICBwfUJdQFCag2OkHYp4BSScUp1iK8g7JufgWlmiTGZCSjeIyFgDyEeW10Iz1NwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+#block_3 .video, #block_5 .video {
+    display: block;
+    cursor: pointer
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    box-shadow: inset 0 0 300px 0 #000;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative
+}
+
+.block:hover {
+    box-shadow: inset 0 0 300px -30px #000
+}
+
+.block, .from, .to {
+    display: flex
+}
+
+.video {
+    width: 34px;
+    height: 24px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAYCAYAAACfpi8JAAAEPElEQVR42q2WaUhUURTHxybHZl4jM6MUDJNIxjilJKE1RWLR2KIELdAyNpVFRVIJRakpQ2JqC4hfXRD95vZJ/KB+UNQP7huKigtuiCsq7rt2znSvXKc3+oYU/jjvvfvu+b1zz/nfKxKJRA6gQ0ROOp2OQ2m12qP2iL6n0Wg4mMeRmdOB0Z5/Ynyxra3t3OLi4tv19fWva2tr0f+hyJmZmUd5eXnHydzWMCzQrmtxa2urz+bm5o/t7e3fB6Xl5eXwmJgYBYFxECCRZGFh4bWQybe2tn4B8E+QIJiuri4/ZonYzNBrRy8vLycCK5JBOj/bmgyexQ4ODj4tLS31T0pK0pnNZo/MzMyzLS0tN6enp98DnE2Q/v5+AwkoZv4fxt/p6emusISPV1ZWwsvKytQIwsEFL8jY2NjL+Pj4UzBGjsAgKRH+limVSlVRUdGlpaWlGL73e3p6DEzww6SIHWtra71g6XZidnZ2nrcJAml9AM9U+JwE5/R6vTI4ONjFzc1NQe+hEhMTtfPz85E2QBBAggBBQUHykZGRW5DFBHZcc3OznhcEMvEKv5YGgg7QTkxMGFdXVyNhqcxzc3Phvb29N0wm0zE6JiUlxRuexVl9TCDJgqSwsFADsG/4MscLAsHi8AtpgLq6Oj20dBzfBFDkH2JjYzV0LAS+xwNiyQbUk9FWLTU2NlpAjrIgkI3ntCYyMjJOWX+ltSDAK3d3d2cEgXY9CeO/84A4TU5OmuwCgUIKIMXIwXo+FNCmP/Pz88/gOyqVSgmd8I4pQgTB9jwiBGTX0uTk5FgmdXFxUcD9LwL9ggbkIKMmPpDx8XH7QNLS0rA+ZGq1Wgn1Ei0EpLu7O5gElI6OjhrtBamvr7/4Dwj4wjmckOM4Z0hzmBCQqqqqyxgMlxlq5sWBgIAb3iaTympqaq7uBwFZM4eFhWHnyAIDA13B3CIPBARa8qO/v7/FQwICAlzBP2zuQ7Dn/EJYanrl5eW+uB/xgUxNTT2zCwTV0NBwhXaO0WhUDw0NPYGgu9wQjgzRlZWVOM6Zui4Y3Xt2DAsCxwwDbph2gYAXfMvKytJRGJAiOTn5NNSCoamp6VZJScnl0NDQE1gT5Lm8r6/vrnUAAiIh88jBXS/AB3wV5CPM2kcXFBT4UNckkjGyXHt4eCgHBgbusEvCZ2i07qKiotzBn16y42An38kIr19sbGwkDA8PP0CH9fb2VjIboDwkJORYRUWF3+zs7Lt9/MWRgOwASaVSBQS/Tl0Y6szHAgJb8qe9OgPrAzascCi451j9aOvwTtR+HdXe3n6NbnpWsnhOdna2DpfFYDBgnYmc4OBz/yCPiQQ+MTc315NuejySkCOCmFyLJBEREcfha9/uddqyR5DyhI6OjhukliTMwYhP9PT2dw19fX1VxcXFftXV1dewO6yF963FNw59JTU11ZPUE82GmAnIqz+D8Cxg1KCqNQAAAABJRU5ErkJggg==);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none
+}
+
+.from, .to {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative
+}
+
+.fromComments, .fromDay, .fromLikes, .toComments, .toDay, .toLikes {
+    position: absolute;
+    top: -20px
+}
+
+.fromDay, .toDay {
+    left: 0
+}
+
+.fromLikes, .toLikes {
+    left: 100px
+}
+
+.fromComments, .toComments {
+    left: 200px
+}
+
+.fromDay, .imageUpload, .toDay {
+    font-size: 17px
+}
+
+.imageUpload {
+    margin-bottom: 15px
+}
+
+.to {
+    margin-bottom: 30px
+}
+
+.from {
+    margin-bottom: 40px
+}
+
+.fromLikes p, .toLikes p {
+    width: 21px;
+    height: 19px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAATCAYAAAB/TkaLAAAA4klEQVR42q3UwQoBQRzH8T3gHciryIHXkINcLOWolIMXUChtWt6CnLlwloOV4sDJM4z/TzO1TTs7g//U97T//+e0M54QwpNlKJ/aUBF1phZUJTaDqtRSfo/kfEvuf2bUYIE6CPOZUEVqmjKzp/IKzVEnYT8vh5kjPKBtwXt8oDtmdAv0yYw+gN6Z0RvQNTO6AlpnRmtAs9SVCbzgEqifv8yEluI3CvX/BHv6NVUFP4KzuKOjnnwsvjmhbiShaO4IBkn7JhSNLeDItJuGoqEBHKTt2VDU1cCObccFRU35njZc5t8elrd1GsGeigAAAABJRU5ErkJggg==);
+    margin-right: 7px
+}
+
+.fromComments p, .toComments p {
+    width: 17px;
+    height: 17px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAM0lEQVR42mP4////uf+UgbMM/6kARg0ZNWSEGpIExLtJxEfQDSEXN1LDEBBuooYhIDwDAJ9PTRkRHpWAAAAAAElFTkSuQmCC);
+    margin-right: 7px
+}
+
+.fromComments p, .fromLikes p, .toComments p, .toLikes p {
+    cursor: pointer
+}
+
+.fromComments, .fromLikes, .toComments, .toLikes {
+    display: flex;
+    font-weight: 700
+}
+
+.loadMoreButton {
+    width: 125px;
+    height: 30px;
+    background: #fafafa;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-bottom: 75px;
+    font-weight: 700
+}
+
+.loadMoreButton:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .05)
+}
+
+@media (max-width: 1100px) {
+    .blocks {
+        width: 100%;
+        justify-content: center
+    }
+
+    .block {
+        margin-left: 30px;
+        margin-right: 30px
+    }
+}
+
+/*# sourceMappingURL=main.71d6df1c.chunk.css.map */
