@@ -22,6 +22,13 @@
     align-items: center;
 }
 
+.logo {
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    background-image: url(img/logo.jpg);
+}
+
 .start {
     font-size: 15px;
     color: #4090db;
@@ -70,6 +77,11 @@
         width: 70px;
         height: 70px;
         margin-right: 20px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
     }
 
     .left a, .left a img {
@@ -122,6 +134,11 @@
         width: 50px;
         height: 50px;
         margin-left: 0;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
     }
 
     .info li {

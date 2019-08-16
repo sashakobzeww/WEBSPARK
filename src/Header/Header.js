@@ -9,7 +9,9 @@ class Header extends Component {
             <div className="header">
 
                 <div className="left">
-                    <a href="#"><img src={logo} alt="logo"/></a>
+                    <a href="#">
+                        <div className="logo"></div>
+                    </a>
                 </div>
 
                 <div className="right">
