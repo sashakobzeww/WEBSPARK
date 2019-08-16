@@ -7,26 +7,43 @@ import "react-datepicker/dist/react-datepicker.css";
 class DateForm extends Component {
 
     state = {
-        startDate: new Date()
+        startDateFrom: new Date(),
+        startDateTo: new Date()
     };
 
-    handleSelectOrChange(date) {
+    handleSelectOrChangeFrom(date) {
         this.setState({
-            startDate: date
+            startDateFrom: date
+        });
+    }
+
+    handleSelectOrChangeTo(date) {
+        this.setState({
+            startDateTo: date
         });
     }
 
     render() {
         return(
             <>
-                <p>Date</p>
-                <DatePicker
-                    dateFormatCalendar={"dd.MM"}
-                    dateFormat={"dd.MM"}
-                    selected={this.state.startDate}
-                    onSelect={this.handleSelectOrChange.bind(this)}
-                    onChange={this.handleSelectOrChange.bind(this)}
-                />
+                <div className="dateFormContainer">
+                    <p>Date</p>
+                    <DatePicker
+                        dateFormat={"dd.MM"}
+                        selected={this.state.startDateFrom}
+                        onSelect={this.handleSelectOrChangeFrom.bind(this)}
+                        onChange={this.handleSelectOrChangeFrom.bind(this)}
+                        className="DatePickerFrom"
+                    />
+                    <DatePicker
+                        dateFormat={"dd.MM"}
+                        maxDate={new Date()}
+                        selected={this.state.startDateTo}
+                        onSelect={this.handleSelectOrChangeTo.bind(this)}
+                        onChange={this.handleSelectOrChangeTo.bind(this)}
+                        className="DatePickerTo"
+                    />
+                </div>
             </>
         )
     }

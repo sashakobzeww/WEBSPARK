@@ -1,0 +1,27 @@
+.dateFormContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateFormContainer > div{
+    width: 120px;
+    border: 1px solid grey;
+}
+
+.dateFormContainer > input{
+    max-width: 120px !important;
+}
+
+.DatePickerFrom, .DatePickerTo {
+    outline: 0px;
+    width: 119px;
+}
+
+.react-datepicker-ignore-onclickoutside {
+    width: 120px;
+}
+
+.react-datepicker-ignore-onclickoutside:focus {
+    outline: 0px
+}
