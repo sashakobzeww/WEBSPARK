@@ -1,0 +1,155 @@
+.blockContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    padding-top: 70px;
+    box-shadow: inset 0px 10px 20px 0px #0000001f;
+}
+
+.blocks {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#block_1 {background-image: url(Block/img/block_1.jpg)}
+#block_2 {background-image: url(Block/img/block_2.jpg)}
+#block_3 {background-image: url(Block/img/block_3.jpg)}
+#block_4 {background-image: url(Block/img/block_4.jpg)}
+#block_5 {background-image: url(Block/img/block_5.jpg)}
+#block_6 {background-image: url(Block/img/block_6.jpg)}
+#block_7 {background-image: url(Block/img/block_7.jpg)}
+#block_8 {background-image: url(Block/img/block_8.jpg)}
+#block_9 {background-image: url(Block/img/block_9.jpg)}
+
+#block_3 .fromLikes p,
+#block_3 .toLikes p,
+#block_5 .fromLikes p,
+#block_5 .toLikes p {
+    background-image: url(Block/img/play.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#block_3 .video,
+#block_5 .video{
+    display: block;
+    cursor: pointer;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 0 0 300px 0 black;
+    margin-bottom: 50px;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.block:hover {
+    box-shadow: inset 0 0 300px -30px black;
+}
+
+.block, .from, .to {
+    display: flex;
+}
+
+.video {
+    width: 34px;
+    height: 24px;
+    background-image: url(Block/img/video.png);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
+}
+
+.from, .to {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.fromDay, .fromLikes, .fromComments,
+.toDay, .toLikes, .toComments {
+    position: absolute;
+    top: -20px;
+}
+
+.fromDay, .toDay {
+    left: 0;
+}
+
+.fromLikes, .toLikes  {
+    left: 100px;
+}
+
+.fromComments, .toComments {
+    left: 200px;
+}
+
+
+.fromDay, .toDay, .imageUpload {
+    font-size: 17px;
+}
+
+.imageUpload {
+    margin-bottom: 15px;
+}
+
+.to {
+    margin-bottom: 30px;
+}
+
+.from {
+    margin-bottom: 40px;
+}
+
+.fromLikes p, .toLikes p {
+    width: 21px;
+    height: 19px;
+    background-image: url(Block/img/like.png);
+    margin-right: 7px;
+}
+
+.fromComments p, .toComments p {
+    width: 17px;
+    height: 17px;
+    background-image: url(Block/img/comment.png);
+    margin-right: 7px;
+}
+
+.fromLikes p, .toLikes p, .fromComments p, .toComments p {
+    cursor: pointer;
+}
+
+.fromLikes, .toLikes, .fromComments, .toComments {
+    display: flex;
+    font-weight: bold;
+}
+
+.loadMoreButton {
+    width: 125px;
+    height: 30px;
+    background: #fafafa;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 75px;
+    font-weight: bold;
+}
+
+.loadMoreButton:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.05);
+}
