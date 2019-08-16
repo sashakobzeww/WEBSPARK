@@ -24,6 +24,21 @@
 #block_8 {background-image: url(Block/img/block_8.jpg)}
 #block_9 {background-image: url(Block/img/block_9.jpg)}
 
+#block_3 .fromLikes p,
+#block_3 .toLikes p,
+#block_5 .fromLikes p,
+#block_5 .toLikes p {
+    background-image: url(Block/img/play.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#block_3 .video,
+#block_5 .video{
+    display: block;
+    cursor: pointer;
+}
+
 .block {
     width: 300px;
     height: 300px;
@@ -36,6 +51,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
 
 .block:hover {
@@ -44,6 +60,16 @@
 
 .block, .from, .to {
     display: flex;
+}
+
+.video {
+    width: 34px;
+    height: 24px;
+    background-image: url(Block/img/video.png);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
 }
 
 .from, .to {

@@ -104,6 +104,8 @@ class Main extends Component {
         const items = blocks.map((block) =>
             <li className="block" id={block.idBlock}>
 
+                <div className="video"></div>
+
                 <div className="from">
                     <p className="fromDay">{block.fromDay}</p>
                     <p className="fromLikes"><p></p>{block.fromLikes}</p>
@@ -139,9 +141,9 @@ class Main extends Component {
 
 export default Main
 
-// todo блок для видео
-// todo Какие есть варианты вынесения кода блока в отдельный компонент?
 // todo Кнопка внизу
 // todo Дейтпикер
 // todo Адаптивным сделать
+
+// todo Какие есть варианты вынесения кода блока в отдельный компонент?
 // todo Удалить все неиспользуемые файлы и строки
