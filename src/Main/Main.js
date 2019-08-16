@@ -134,6 +134,10 @@ class Main extends Component {
                     {this.makeList()}
                 </ul>
 
+                <div className="loadMoreContainer">
+                    <button className="loadMoreButton">LOAD MORE</button>
+                </div>
+
             </div>
         );
     }
@@ -141,7 +145,6 @@ class Main extends Component {
 
 export default Main
 
-// todo Кнопка внизу
 // todo Дейтпикер
 // todo Адаптивным сделать
 
