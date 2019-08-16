@@ -43,7 +43,27 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
+.fromDay, .fromLikes, .fromComments,
+.toDay, .toLikes, .toComments {
+    position: absolute;
+    top: -20px;
+}
+
+.fromDay, .toDay {
+    left: 0;
+}
+
+.fromLikes, .toLikes  {
+    left: 100px;
+}
+
+.fromComments, .toComments {
+    left: 200px;
+}
+
 
 .fromDay, .toDay, .imageUpload {
     font-size: 17px;
@@ -58,7 +78,7 @@
 }
 
 .from {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .fromLikes p, .toLikes p {

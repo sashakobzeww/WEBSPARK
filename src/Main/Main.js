@@ -139,7 +139,6 @@ class Main extends Component {
 
 export default Main
 
-// todo Выровнять лайки
 // todo Фон блока Главное
 // todo эффекты при наведении на блок и его иконки
 // todo блок для видео
