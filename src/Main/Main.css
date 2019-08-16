@@ -38,6 +38,10 @@
     align-items: center;
 }
 
+.block:hover {
+    box-shadow: inset 0 0 300px -30px black;
+}
+
 .block, .from, .to {
     display: flex;
 }
@@ -96,6 +100,10 @@
     height: 17px;
     background-image: url(Block/img/comment.png);
     margin-right: 7px;
+}
+
+.fromLikes p, .toLikes p, .fromComments p, .toComments p {
+    cursor: pointer;
 }
 
 .fromLikes, .toLikes, .fromComments, .toComments {
