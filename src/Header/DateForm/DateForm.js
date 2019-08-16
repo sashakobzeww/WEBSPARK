@@ -21,9 +21,8 @@ class DateForm extends Component {
             <>
                 <p>Date</p>
                 <DatePicker
-                    dateFormatCalendar={"dd.MM.YYYY"}
+                    dateFormatCalendar={"dd.MM"}
                     dateFormat={"dd.MM"}
-                    minDate={new Date()}
                     selected={this.state.startDate}
                     onSelect={this.handleSelectOrChange.bind(this)}
                     onChange={this.handleSelectOrChange.bind(this)}
