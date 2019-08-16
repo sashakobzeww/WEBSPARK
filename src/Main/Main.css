@@ -2,6 +2,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #fafafa;
+    padding-top: 70px;
+    box-shadow: inset 0px 10px 20px 0px #0000001f;
 }
 
 .blocks {
