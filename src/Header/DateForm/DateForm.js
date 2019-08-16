@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import './Date.css'
+import './DateForm.css'
 
-class Date extends Component {
+class DateForm extends Component {
     render() {
         return(
             <>
@@ -11,4 +11,4 @@ class Date extends Component {
     }
 }
 
-export default Date
+export default DateForm
